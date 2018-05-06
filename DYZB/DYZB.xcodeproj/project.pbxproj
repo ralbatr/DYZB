@@ -18,6 +18,7 @@
 		62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FC9209EA31600B20FDD /* HomeViewController.swift */; };
 		62699FCC209EA78300B20FDD /* commTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCB209EA78300B20FDD /* commTool.swift */; };
 		62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCD209EAC5400B20FDD /* PageContentView.swift */; };
+		62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		62699FC9209EA31600B20FDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		62699FCB209EA78300B20FDD /* commTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commTool.swift; sourceTree = "<group>"; };
 		62699FCD209EAC5400B20FDD /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				624DDAFD209E9F2500ABA631 /* UIBarButtomItem-Extition.swift */,
 				62699FC9209EA31600B20FDD /* HomeViewController.swift */,
 				62699FCB209EA78300B20FDD /* commTool.swift */,
+				62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */,
 				62699FCC209EA78300B20FDD /* commTool.swift in Sources */,
 				624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */,
+				62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */,
 				624DDAFE209E9F2500ABA631 /* UIBarButtomItem-Extition.swift in Sources */,
 				62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */,
 			);
