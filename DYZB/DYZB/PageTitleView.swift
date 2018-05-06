@@ -8,6 +8,10 @@
 
 import UIKit
 
+//元组
+private let kNormalColor:(CGFloat,CGFloat,CGFloat) = (85,85,85)
+private let kSelectColor:(CGFloat,CGFloat,CGFloat) = (225,128,0)
+
 protocol PageTitleViewDelegate : class {
     func pageTitleView(titleView:PageTitleView,selectedIndex Index:Int)
 }
@@ -17,7 +21,6 @@ class PageTitleView: UIView {
     private var titles:[String]
     private lazy var titleLabel:[UILabel] = [UILabel]()
     private var currentIndex = 0;
-    
     weak var delegate:PageTitleViewDelegate?
     init(frame: CGRect,titles: [String]) {
         self.titles = titles;
@@ -86,7 +89,6 @@ extension PageTitleView {
         
         addSubview(scrollLine)
         
-        
         guard let firstLabel = titleLabel.first else {
             return;
         }
@@ -96,7 +98,7 @@ extension PageTitleView {
     private func scrollViewLine() {
         
         let lineView = UIView()
-        lineView.backgroundColor = .orange 
+        lineView.backgroundColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
         
     }
 }
@@ -120,5 +122,25 @@ extension PageTitleView {
         }
         
         delegate?.pageTitleView(titleView: self, selectedIndex: currentIndex)
+    }
+}
+
+extension PageTitleView {
+    func setTitleWithProgress(progress:CGFloat,soureIndex:Int,targetInex:Int) {
+        let sourceLabel = titleLabel[soureIndex]
+        let targetLabel = titleLabel[targetInex]
+        
+        let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let moveX = moveTotalX * progress
+        
+        scrollLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
+        
+        let colorDelta = (kSelectColor.0-kNormalColor.0,kSelectColor.1-kNormalColor.1,kSelectColor.2-kNormalColor.2)
+        
+        targetLabel.textColor = UIColor(r:kSelectColor.0-colorDelta.0*progress, g: kSelectColor.1-colorDelta.1*progress, b: kSelectColor.2-colorDelta.2*progress)
+        
+        sourceLabel.textColor = UIColor(r:kNormalColor.0+colorDelta.0*progress, g: kNormalColor.1+colorDelta.1*progress, b: kNormalColor.2+colorDelta.2*progress)
+        currentIndex = targetInex
+        
     }
 }

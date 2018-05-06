@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
         }
         
         let pageContentView = PageContentView(frame: frame, childrenVcs: childrenVcs, parentViewController: self)
+        pageContentView.delegate = self
         
         return pageContentView;
     }()
@@ -64,5 +65,11 @@ extension HomeViewController:PageTitleViewDelegate {
     func pageTitleView(titleView: PageTitleView, selectedIndex Index: Int) {
         print(Index)
         pageContentView.setContentIndex(index: Index)
+    }
+}
+
+extension HomeViewController:PageContentViewDelegate {
+    func pageContetnView(pageContentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress: progress, soureIndex: sourceIndex, targetInex: targetIndex)
     }
 }
