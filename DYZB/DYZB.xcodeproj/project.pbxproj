@@ -26,6 +26,7 @@
 		629AEB4320A069940097EA7E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4220A069940097EA7E /* RecommendViewController.swift */; };
 		629AEB4620A06CAC0097EA7E /* CollectionPretyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */; };
 		629AEB4720A06CAC0097EA7E /* CollectionPretyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */; };
+		629AEB4920A0A3E80097EA7E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4820A0A3E80097EA7E /* NetworkTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		629AEB4220A069940097EA7E /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPretyCell.swift; sourceTree = "<group>"; };
 		629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPretyCell.xib; sourceTree = "<group>"; };
+		629AEB4820A0A3E80097EA7E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */,
 				629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */,
 				629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */,
+				629AEB4820A0A3E80097EA7E /* NetworkTool.swift */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				629AEB4620A06CAC0097EA7E /* CollectionPretyCell.swift in Sources */,
 				62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */,
 				62699FCC209EA78300B20FDD /* commTool.swift in Sources */,
+				629AEB4920A0A3E80097EA7E /* NetworkTool.swift in Sources */,
 				624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */,
 				629AEB3E20A0698E0097EA7E /* CollectionHeadView.swift in Sources */,
 				62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */,
