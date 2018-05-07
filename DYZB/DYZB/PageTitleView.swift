@@ -111,8 +111,8 @@ extension PageTitleView {
         }
         
         let oldLabel = titleLabel[currentIndex]
-        oldLabel.textColor = .darkGray
-        currntLabel.textColor = .orange
+        oldLabel.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
+        currntLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
         currentIndex = currntLabel.tag
         
         let scrollLineX = CGFloat(currntLabel.tag)*scrollLine.frame.width
@@ -137,9 +137,11 @@ extension PageTitleView {
         
         let colorDelta = (kSelectColor.0-kNormalColor.0,kSelectColor.1-kNormalColor.1,kSelectColor.2-kNormalColor.2)
         
-        targetLabel.textColor = UIColor(r:kSelectColor.0-colorDelta.0*progress, g: kSelectColor.1-colorDelta.1*progress, b: kSelectColor.2-colorDelta.2*progress)
+        targetLabel.textColor = UIColor(r:kSelectColor.0+colorDelta.0*progress, g: kSelectColor.1+colorDelta.1*progress, b: kSelectColor.2+colorDelta.2*progress)
         
-        sourceLabel.textColor = UIColor(r:kNormalColor.0+colorDelta.0*progress, g: kNormalColor.1+colorDelta.1*progress, b: kNormalColor.2+colorDelta.2*progress)
+        sourceLabel.textColor = UIColor(r:kNormalColor.0-colorDelta.0*progress, g: kNormalColor.1-colorDelta.1*progress, b: kNormalColor.2-colorDelta.2*progress)
+        
+       
         currentIndex = targetInex
         
     }

@@ -19,6 +19,11 @@
 		62699FCC209EA78300B20FDD /* commTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCB209EA78300B20FDD /* commTool.swift */; };
 		62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCD209EAC5400B20FDD /* PageContentView.swift */; };
 		62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */; };
+		629AEB3E20A0698E0097EA7E /* CollectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB3A20A0698D0097EA7E /* CollectionHeadView.swift */; };
+		629AEB3F20A0698E0097EA7E /* CollectionNormailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB3B20A0698E0097EA7E /* CollectionNormailCell.swift */; };
+		629AEB4020A0698E0097EA7E /* CollectionNormailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */; };
+		629AEB4120A0698E0097EA7E /* CollectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB3D20A0698E0097EA7E /* CollectionHeadView.xib */; };
+		629AEB4320A069940097EA7E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4220A069940097EA7E /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		62699FCB209EA78300B20FDD /* commTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commTool.swift; sourceTree = "<group>"; };
 		62699FCD209EAC5400B20FDD /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
+		629AEB3A20A0698D0097EA7E /* CollectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeadView.swift; sourceTree = "<group>"; };
+		629AEB3B20A0698E0097EA7E /* CollectionNormailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormailCell.swift; sourceTree = "<group>"; };
+		629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormailCell.xib; sourceTree = "<group>"; };
+		629AEB3D20A0698E0097EA7E /* CollectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeadView.xib; sourceTree = "<group>"; };
+		629AEB4220A069940097EA7E /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,11 @@
 		624DDAD6209DD46200ABA631 /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				629AEB4220A069940097EA7E /* RecommendViewController.swift */,
+				629AEB3A20A0698D0097EA7E /* CollectionHeadView.swift */,
+				629AEB3D20A0698E0097EA7E /* CollectionHeadView.xib */,
+				629AEB3B20A0698E0097EA7E /* CollectionNormailCell.swift */,
+				629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */,
 				624DDAF9209E980E00ABA631 /* PageTitleView.swift */,
 				62699FCD209EAC5400B20FDD /* PageContentView.swift */,
 				624DDAF2209DDC9B00ABA631 /* Home.storyboard */,
@@ -143,10 +158,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629AEB4020A0698E0097EA7E /* CollectionNormailCell.xib in Resources */,
 				624DDAE2209DD46E00ABA631 /* LaunchScreen.storyboard in Resources */,
 				624DDAF4209DDC9B00ABA631 /* Home.storyboard in Resources */,
 				624DDADF209DD46E00ABA631 /* Assets.xcassets in Resources */,
 				624DDAF1209DDC9400ABA631 /* Live.storyboard in Resources */,
+				629AEB4120A0698E0097EA7E /* CollectionHeadView.xib in Resources */,
 				624DDADD209DD46300ABA631 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,9 +179,12 @@
 				62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */,
 				62699FCC209EA78300B20FDD /* commTool.swift in Sources */,
 				624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */,
+				629AEB3E20A0698E0097EA7E /* CollectionHeadView.swift in Sources */,
 				62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */,
 				624DDAFE209E9F2500ABA631 /* UIBarButtomItem-Extition.swift in Sources */,
+				629AEB3F20A0698E0097EA7E /* CollectionNormailCell.swift in Sources */,
 				62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */,
+				629AEB4320A069940097EA7E /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

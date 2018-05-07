@@ -84,9 +84,8 @@ extension PageContentView:UICollectionViewDelegate {
         var currentOffset = scrollView.contentOffset.x
         //you
         if   currentOffset > startContentOffsetX {
-            progress = currentOffset/scrollviewW
-            sourceIndex = Int(progress)
-            progress = progress - floor(progress)
+            progress = currentOffset/scrollviewW - floor(currentOffset/scrollviewW)
+            sourceIndex = Int(currentOffset/scrollviewW)
             targetIndex = sourceIndex + 1
             if targetIndex >= childrenVcs.count {
                 targetIndex = childrenVcs.count - 1
@@ -97,13 +96,12 @@ extension PageContentView:UICollectionViewDelegate {
                 targetIndex = sourceIndex
             }
         } else {
-            progress = currentOffset/scrollviewW
-            targetIndex = Int(progress)
+            progress = 1 - (currentOffset/scrollviewW-floor(currentOffset/scrollviewW))
+            targetIndex = Int(currentOffset/scrollviewW)
             sourceIndex = targetIndex + 1
             if sourceIndex >= childrenVcs.count {
                 sourceIndex = childrenVcs.count-1
             }
-            progress = 1 - (progress - floor(progress))
         }
         
 //        print("progress \(progress) sourec \(sourceIndex) targetIndex \(targetIndex)")
