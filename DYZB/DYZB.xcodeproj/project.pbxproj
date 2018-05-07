@@ -24,6 +24,8 @@
 		629AEB4020A0698E0097EA7E /* CollectionNormailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */; };
 		629AEB4120A0698E0097EA7E /* CollectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB3D20A0698E0097EA7E /* CollectionHeadView.xib */; };
 		629AEB4320A069940097EA7E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4220A069940097EA7E /* RecommendViewController.swift */; };
+		629AEB4620A06CAC0097EA7E /* CollectionPretyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */; };
+		629AEB4720A06CAC0097EA7E /* CollectionPretyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormailCell.xib; sourceTree = "<group>"; };
 		629AEB3D20A0698E0097EA7E /* CollectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeadView.xib; sourceTree = "<group>"; };
 		629AEB4220A069940097EA7E /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPretyCell.swift; sourceTree = "<group>"; };
+		629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPretyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				62699FC9209EA31600B20FDD /* HomeViewController.swift */,
 				62699FCB209EA78300B20FDD /* commTool.swift */,
 				62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */,
+				629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */,
+				629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629AEB4720A06CAC0097EA7E /* CollectionPretyCell.xib in Resources */,
 				629AEB4020A0698E0097EA7E /* CollectionNormailCell.xib in Resources */,
 				624DDAE2209DD46E00ABA631 /* LaunchScreen.storyboard in Resources */,
 				624DDAF4209DDC9B00ABA631 /* Home.storyboard in Resources */,
@@ -176,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				624DDAFA209E980F00ABA631 /* PageTitleView.swift in Sources */,
+				629AEB4620A06CAC0097EA7E /* CollectionPretyCell.swift in Sources */,
 				62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */,
 				62699FCC209EA78300B20FDD /* commTool.swift in Sources */,
 				624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */,

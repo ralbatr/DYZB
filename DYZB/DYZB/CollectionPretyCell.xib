@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPretyCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKt-Bg-G6H">
+                        <rect key="frame" x="0.0" y="226" width="86" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="7bv-hm-ang"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="guangzhoushi" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我啊是的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-Pu-W53">
+                        <rect key="frame" x="0.0" y="205" width="170" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="rfi-7e-w7g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="F2P-w5-Mvp">
+                        <rect key="frame" x="5" y="5" width="165" height="195"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.Radius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskBounce" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6666" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHX-Ml-i1q">
+                        <rect key="frame" x="110" y="5" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="OGi-jT-H9C"/>
+                            <constraint firstAttribute="height" constant="20" id="im0-Iz-ra3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ymp-Pu-W53" secondAttribute="trailing" constant="5" id="0ZT-dc-e2A"/>
+                <constraint firstItem="Ymp-Pu-W53" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5MY-Vi-VYW"/>
+                <constraint firstItem="HHX-Ml-i1q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="6bz-tw-w3G"/>
+                <constraint firstItem="Ymp-Pu-W53" firstAttribute="top" secondItem="F2P-w5-Mvp" secondAttribute="bottom" constant="5" id="972-R9-WlU"/>
+                <constraint firstItem="F2P-w5-Mvp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Iug-ck-Fit"/>
+                <constraint firstItem="bKt-Bg-G6H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="alJ-1t-8q4"/>
+                <constraint firstItem="F2P-w5-Mvp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="b9G-uV-l8T"/>
+                <constraint firstItem="bKt-Bg-G6H" firstAttribute="top" secondItem="Ymp-Pu-W53" secondAttribute="bottom" constant="5" id="evi-WX-c2d"/>
+                <constraint firstAttribute="trailing" secondItem="F2P-w5-Mvp" secondAttribute="trailing" constant="5" id="fAm-yC-KVk"/>
+                <constraint firstAttribute="trailing" secondItem="HHX-Ml-i1q" secondAttribute="trailing" constant="5" id="k4b-ar-flo"/>
+                <constraint firstAttribute="bottom" secondItem="bKt-Bg-G6H" secondAttribute="bottom" constant="10" id="sYF-kz-PvR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="175" height="250"/>
+            <point key="canvasLocation" x="-28.5" y="23"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="ico_location" width="12" height="12"/>
+    </resources>
+</document>
