@@ -29,7 +29,7 @@ class RecommendViewController: UIViewController {
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.backgroundColor = .white
         collectionView.dataSource = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalReuseIdentifier)
+        collectionView.register(UINib(nibName: "CollectionNormailCell", bundle: nil), forCellWithReuseIdentifier: kNormalReuseIdentifier)
 //        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kNormalHeadViewIdentifier)
         
         collectionView.register(UINib(nibName: "CollectionHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kNormalHeadViewIdentifier)
@@ -69,9 +69,7 @@ extension RecommendViewController:UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalReuseIdentifier, for: indexPath)
-        
-        cell.backgroundColor = .red
-        
+            
         return cell
     }
     

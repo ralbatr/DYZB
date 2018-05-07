@@ -32,7 +32,7 @@
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IT5-wy-EO5">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="IT5-wy-EO5">
                         <rect key="frame" x="0.0" y="0.0" width="210" height="196"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadus">
@@ -41,17 +41,32 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskTobouns" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-6Z-d6z">
+                        <rect key="frame" x="5" y="177" width="29" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOS-P7-CzJ">
+                        <rect key="frame" x="153" y="175" width="52" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="66666" image="Image_online"/>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Ane-Ma-rlZ" secondAttribute="bottom" constant="10" id="0J4-Sz-NeV"/>
+                <constraint firstItem="hAh-6Z-d6z" firstAttribute="leading" secondItem="IT5-wy-EO5" secondAttribute="leading" constant="5" id="8ZL-dZ-8Su"/>
                 <constraint firstAttribute="trailing" secondItem="dae-G7-5zM" secondAttribute="trailing" constant="5" id="Fzp-Kt-cZh"/>
                 <constraint firstAttribute="trailing" secondItem="IT5-wy-EO5" secondAttribute="trailing" id="HCG-dD-2Df"/>
                 <constraint firstItem="dae-G7-5zM" firstAttribute="centerY" secondItem="Ane-Ma-rlZ" secondAttribute="centerY" id="Qd0-Ua-rpU"/>
                 <constraint firstItem="IT5-wy-EO5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ctt-oc-0Xj"/>
+                <constraint firstItem="EOS-P7-CzJ" firstAttribute="bottom" secondItem="IT5-wy-EO5" secondAttribute="bottom" constant="-5" id="dDc-dP-6UB"/>
                 <constraint firstItem="dae-G7-5zM" firstAttribute="leading" secondItem="Ane-Ma-rlZ" secondAttribute="trailing" constant="5" id="fyG-Ev-G77"/>
+                <constraint firstItem="EOS-P7-CzJ" firstAttribute="trailing" secondItem="IT5-wy-EO5" secondAttribute="trailing" constant="-5" id="hsX-7E-Jyk"/>
                 <constraint firstItem="Ane-Ma-rlZ" firstAttribute="top" secondItem="IT5-wy-EO5" secondAttribute="bottom" constant="5" id="m8k-89-2xL"/>
                 <constraint firstItem="Ane-Ma-rlZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ooE-nx-Erq"/>
+                <constraint firstItem="hAh-6Z-d6z" firstAttribute="bottom" secondItem="IT5-wy-EO5" secondAttribute="bottom" constant="-5" id="qhw-mM-iOJ"/>
                 <constraint firstItem="IT5-wy-EO5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tmG-vF-ftD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -60,6 +75,8 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="Image_online" width="16" height="16"/>
         <image name="home_live_cate_normal" width="14" height="14"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
     </resources>
 </document>
