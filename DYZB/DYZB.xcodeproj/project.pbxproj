@@ -28,6 +28,7 @@
 		629AEB4620A06CAC0097EA7E /* CollectionPretyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */; };
 		629AEB4720A06CAC0097EA7E /* CollectionPretyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */; };
 		629AEB4920A0A3E80097EA7E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4820A0A3E80097EA7E /* NetworkTool.swift */; };
+		62C3AE7520A1F592006751AA /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3AE7420A1F592006751AA /* CollectionBaseCell.swift */; };
 		DFBB7C3820A17C26008C8E33 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB7C3720A17C26008C8E33 /* RecommendViewModel.swift */; };
 		DFBB7C3A20A17ECA008C8E33 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB7C3920A17ECA008C8E33 /* NSDate-Extension.swift */; };
 		DFBB7C3C20A18182008C8E33 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB7C3B20A18182008C8E33 /* AnchorGroup.swift */; };
@@ -58,6 +59,7 @@
 		629AEB4420A06CAC0097EA7E /* CollectionPretyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPretyCell.swift; sourceTree = "<group>"; };
 		629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPretyCell.xib; sourceTree = "<group>"; };
 		629AEB4820A0A3E80097EA7E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		62C3AE7420A1F592006751AA /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		CBAEAECFB553ECDE5624A1F8 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
 		D2F4964FA1B41A860D38E979 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBB7C3720A17C26008C8E33 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				DFBB7C3920A17ECA008C8E33 /* NSDate-Extension.swift */,
 				DFBB7C3B20A18182008C8E33 /* AnchorGroup.swift */,
 				DFBB7C3D20A18BE9008C8E33 /* AnchorModel.swift */,
+				62C3AE7420A1F592006751AA /* CollectionBaseCell.swift */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				629AEB4620A06CAC0097EA7E /* CollectionPretyCell.swift in Sources */,
 				62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */,
 				62699FCC209EA78300B20FDD /* commTool.swift in Sources */,
+				62C3AE7520A1F592006751AA /* CollectionBaseCell.swift in Sources */,
 				629AEB4920A0A3E80097EA7E /* NetworkTool.swift in Sources */,
 				624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */,
 				629AEB3E20A0698E0097EA7E /* CollectionHeadView.swift in Sources */,
@@ -439,8 +443,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7ZZ9S6T98H;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q4F8JTD7G;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,8 +453,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aim1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "552d6e23-a33e-4291-a7f4-0ca2bb79abae";
-				PROVISIONING_PROFILE_SPECIFIER = zhuo_vip;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,8 +466,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7ZZ9S6T98H;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q4F8JTD7G;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,8 +476,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aim1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "552d6e23-a33e-4291-a7f4-0ca2bb79abae";
-				PROVISIONING_PROFILE_SPECIFIER = zhuo_vip;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

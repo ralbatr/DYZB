@@ -83,14 +83,18 @@ extension RecommendViewController:UICollectionViewDataSource,UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell:UICollectionViewCell;
-//        if indexPath.section == 1 {
-//            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPretyReuseIdentifier, for: indexPath)
-//        } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalReuseIdentifier, for: indexPath)
-//        }
         
-            
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
+        var cell:CollectionBaseCell
+        
+        if indexPath.section == 1 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier:  kPretyReuseIdentifier, for: indexPath) as! CollectionPretyCell
+        } else {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalReuseIdentifier, for: indexPath) as! CollectionNormailCell
+        }
+        cell.anchor = anchor
+
         return cell
     }
     
