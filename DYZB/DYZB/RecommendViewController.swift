@@ -19,6 +19,8 @@ private let kNormalHeadViewIdentifier = "kNormalHeadViewIdentifier"
 
 class RecommendViewController: UIViewController {
     
+    private lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+    
     // 懒加载属性
     private lazy var collectionView : UICollectionView = {
         var layout = UICollectionViewFlowLayout()
@@ -47,7 +49,7 @@ class RecommendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
+        recommendVM.requestData()
     }
 }
 
@@ -55,6 +57,14 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
     private func setupUI() {
         view.addSubview(collectionView)
+    }
+}
+
+extension RecommendViewController {
+    private func loadData() {
+        NetworkTool.requestData(type: .GET, URLString: "") { (result) in
+            print(result)
+        }
     }
 }
 
@@ -93,11 +103,9 @@ extension RecommendViewController:UICollectionViewDataSource,UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if indexPath.section == 1 {
-//            CGSize(width: KitemWidth, height: KitemHight)
             return CGSize(width: KitemWidth, height:kPrettyItemHight )
         }
         
-        print("(width: \(KitemWidth), height: \(KitemHight)")
         return CGSize(width: KitemWidth, height: KitemHight)
     }
     
