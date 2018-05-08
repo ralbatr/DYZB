@@ -23,12 +23,10 @@ extension RecommendViewModel {
                 return
             }
             guard let dataArray = resultDict["data"] as?[[String:NSObject]] else {
-                
                 return
             }
             
             for dict in dataArray {
-//                let group = AnchorGroup(key: dict.key, value: dict.value)
                 let group = AnchorGroup(dict: dict)
                 self.anchorGroups.append(group)
             }

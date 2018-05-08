@@ -10,9 +10,18 @@ import UIKit
 
 class AnchorGroup: NSObject {
     
-    @objc var room_list:[[String:NSObject]]?
+    @objc var room_list:[[String:NSObject]]? {
+        didSet {
+            guard let room_list = room_list else {return}
+            for dict in room_list {
+                anchors.append(AnchorModel(dict: dict))
+            }
+        }
+    }
     @objc var tag_name:String = ""
     @objc var icon_name:String = "btn_column_selected"
+    
+    lazy var anchors:[AnchorModel] = [AnchorModel]()
     
     init(dict : [String:NSObject]) {
         super.init()
@@ -22,5 +31,15 @@ class AnchorGroup: NSObject {
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
         
     }
+    
+//    override func setValue(_ value: Any?, forKey key: String) {
+//        if key == "room_list" {
+//            if let dataArray = value as? [[String:NSObject]] {
+//                for dict in dataArray {
+//                    anchors.append(AnchorModel(dict: dict))
+//                }
+//            }
+//        }
+//    }
 
 }

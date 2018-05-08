@@ -9,20 +9,20 @@
 import UIKit
 
 class AnchorModel: NSObject {
-    var room_id:Int = 0
-    var vertical_src : String = ""
-    var isVertical:Int = 0
-    var room_name:String = ""
-    var nickname:String = ""
-    var online:Int = 0
+    @objc var room_id:Int = 0
+    @objc var vertical_src : String = ""
+    @objc var isVertical:Int = 0
+    @objc var room_name:String = ""
+    /// 主播昵称
+    @objc var nickname:String = ""
+    /// 观看人数
+    @objc var online:Int = 0
     
-    init(key:String,value:NSObject) {
+    init(dict:[String:NSObject]) {
         super.init()
-        let dict = NSDictionary(object: value, forKey: key as NSCopying)
-        setValuesForKeys(dict as! [String : Any])
+        setValuesForKeys(dict)
     }
     
-    override func setValue(_ value: Any?, forKey key: String) {
-        
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
     }
 }
