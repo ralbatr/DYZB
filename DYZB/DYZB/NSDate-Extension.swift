@@ -9,10 +9,10 @@
 import UIKit
 
 extension NSDate {
-    class func getCurrentTime() -> String {
+    class func getCurrentTime() -> NSString {
         let nowDate = Date()
         let interval = Int(nowDate.timeIntervalSince1970)
         
-        return "\(interval)"
+        return "\(interval)" as NSString
     }
 }
