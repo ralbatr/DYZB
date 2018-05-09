@@ -10,13 +10,32 @@ import UIKit
 
 class RecommendViewModel {
     lazy var anchorGroups:[AnchorGroup] = [AnchorGroup]()
+    lazy var cycleModels:[CycleModel] = [CycleModel]()
     private lazy var bigDataGroups:AnchorGroup = AnchorGroup()
     private lazy var prettyDataGroups:AnchorGroup = AnchorGroup()
 }
 
 // send network request
 extension RecommendViewModel {
-    func requestData(finshCallBack:@escaping ()->()) {
+    
+    func requestCycleData(finshCallBack:@escaping ()->()){
+        // 请求无线轮播数据
+        NetworkTool.requestData(type: .GET, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version":"2.300"]) { (result) in
+            
+            guard let resultDict = result as? [String:NSObject] else {return}
+            
+            guard let dataArray = resultDict["data"] as?[[String:NSObject]] else {return}
+            
+            for dict in dataArray {
+                let cycle = CycleModel(dict: dict)
+                self.cycleModels.append(cycle)
+            }
+            
+            finshCallBack()
+        }
+    }
+    
+    func requestData(finshCallBack:@escaping ()->()){
         
         let parameters = ["limit":"4","offset":"0","time":NSDate.getCurrentTime()]
         

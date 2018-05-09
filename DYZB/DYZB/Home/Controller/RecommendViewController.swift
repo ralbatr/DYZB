@@ -12,6 +12,7 @@ private let kItemMargin:CGFloat = 10
 private let KitemWidth:CGFloat = (kScreenWidth-3*kItemMargin)/2
 private let KitemHight = KitemWidth*3/4
 private let kPrettyItemHight = KitemWidth*4/3
+private let kCycleViewHight = kScreenWidth*3/8
 
 private let kNormalReuseIdentifier = "kNormalReuseIdentifier"
 private let kPretyReuseIdentifier = "kPretyReuseIdentifier"
@@ -20,6 +21,12 @@ private let kNormalHeadViewIdentifier = "kNormalHeadViewIdentifier"
 class RecommendViewController: UIViewController {
     
     private lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+    
+    private lazy var recommendCycelView:RecommendCycleView = {
+       let cycelView = RecommendCycleView.recommentCycleView()
+        cycelView.frame = CGRect(x: 0, y: -kScreenWidth, width: kScreenWidth, height: kScreenWidth)
+        return cycelView
+    }()
     
     // 懒加载属性
     private lazy var collectionView : UICollectionView = {
@@ -52,6 +59,10 @@ class RecommendViewController: UIViewController {
         recommendVM.requestData {
             self.collectionView.reloadData()
         }
+        
+        recommendVM.requestCycleData {
+            self.recommendCycelView.cycelModels = self.recommendVM.cycleModels
+        }
     }
 }
 
@@ -59,6 +70,9 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
     private func setupUI() {
         view.addSubview(collectionView)
+        collectionView.addSubview(recommendCycelView)
+        
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewHight, left: 0, bottom: 0, right: 0)
     }
 }
 

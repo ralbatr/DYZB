@@ -19,6 +19,8 @@
 		62699FCC209EA78300B20FDD /* commTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCB209EA78300B20FDD /* commTool.swift */; };
 		62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCD209EAC5400B20FDD /* PageContentView.swift */; };
 		62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */; };
+		62853FD520A3391A0068AB36 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62853FD320A3391A0068AB36 /* CollectionCycleCell.swift */; };
+		62853FD620A3391A0068AB36 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62853FD420A3391A0068AB36 /* CollectionCycleCell.xib */; };
 		629AEB3E20A0698E0097EA7E /* CollectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB3A20A0698D0097EA7E /* CollectionHeadView.swift */; };
 		629AEB3F20A0698E0097EA7E /* CollectionNormailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB3B20A0698E0097EA7E /* CollectionNormailCell.swift */; };
 		629AEB4020A0698E0097EA7E /* CollectionNormailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */; };
@@ -28,6 +30,9 @@
 		629AEB4720A06CAC0097EA7E /* CollectionPretyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */; };
 		629AEB4920A0A3E80097EA7E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AEB4820A0A3E80097EA7E /* NetworkTool.swift */; };
 		62C3AE7520A1F592006751AA /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3AE7420A1F592006751AA /* CollectionBaseCell.swift */; };
+		62EEF85820A3153C00DFC2AC /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EEF85720A3153C00DFC2AC /* RecommendCycleView.swift */; };
+		62EEF85A20A3154D00DFC2AC /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EEF85920A3154D00DFC2AC /* RecommendCycleView.xib */; };
+		62EEF85C20A32F7700DFC2AC /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EEF85B20A32F7700DFC2AC /* CycleModel.swift */; };
 		DF1FEFDA20A2D5B0000A6293 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1FEFD820A2D5B0000A6293 /* Home.storyboard */; };
 		DFBB7C3820A17C26008C8E33 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB7C3720A17C26008C8E33 /* RecommendViewModel.swift */; };
 		DFBB7C3A20A17ECA008C8E33 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB7C3920A17ECA008C8E33 /* NSDate-Extension.swift */; };
@@ -50,6 +55,8 @@
 		62699FCB209EA78300B20FDD /* commTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commTool.swift; sourceTree = "<group>"; };
 		62699FCD209EAC5400B20FDD /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		62699FCF209ECE8800B20FDD /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
+		62853FD320A3391A0068AB36 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		62853FD420A3391A0068AB36 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
 		629AEB3A20A0698D0097EA7E /* CollectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeadView.swift; sourceTree = "<group>"; };
 		629AEB3B20A0698E0097EA7E /* CollectionNormailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormailCell.swift; sourceTree = "<group>"; };
 		629AEB3C20A0698E0097EA7E /* CollectionNormailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormailCell.xib; sourceTree = "<group>"; };
@@ -59,6 +66,9 @@
 		629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPretyCell.xib; sourceTree = "<group>"; };
 		629AEB4820A0A3E80097EA7E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		62C3AE7420A1F592006751AA /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		62EEF85720A3153C00DFC2AC /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		62EEF85920A3154D00DFC2AC /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		62EEF85B20A32F7700DFC2AC /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		CBAEAECFB553ECDE5624A1F8 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
 		D2F4964FA1B41A860D38E979 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1FEFD920A2D5B0000A6293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -121,9 +131,14 @@
 				629AEB4520A06CAC0097EA7E /* CollectionPretyCell.xib */,
 				629AEB4820A0A3E80097EA7E /* NetworkTool.swift */,
 				DFBB7C3720A17C26008C8E33 /* RecommendViewModel.swift */,
+				62EEF85B20A32F7700DFC2AC /* CycleModel.swift */,
 				DFBB7C3B20A18182008C8E33 /* AnchorGroup.swift */,
 				DFBB7C3D20A18BE9008C8E33 /* AnchorModel.swift */,
 				62C3AE7420A1F592006751AA /* CollectionBaseCell.swift */,
+				62EEF85720A3153C00DFC2AC /* RecommendCycleView.swift */,
+				62EEF85920A3154D00DFC2AC /* RecommendCycleView.xib */,
+				62853FD320A3391A0068AB36 /* CollectionCycleCell.swift */,
+				62853FD420A3391A0068AB36 /* CollectionCycleCell.xib */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -242,11 +257,13 @@
 			files = (
 				629AEB4720A06CAC0097EA7E /* CollectionPretyCell.xib in Resources */,
 				629AEB4020A0698E0097EA7E /* CollectionNormailCell.xib in Resources */,
+				62EEF85A20A3154D00DFC2AC /* RecommendCycleView.xib in Resources */,
 				624DDAE2209DD46E00ABA631 /* LaunchScreen.storyboard in Resources */,
 				624DDADF209DD46E00ABA631 /* Assets.xcassets in Resources */,
 				624DDAF1209DDC9400ABA631 /* Live.storyboard in Resources */,
 				629AEB4120A0698E0097EA7E /* CollectionHeadView.xib in Resources */,
 				624DDADD209DD46300ABA631 /* Main.storyboard in Resources */,
+				62853FD620A3391A0068AB36 /* CollectionCycleCell.xib in Resources */,
 				DF1FEFDA20A2D5B0000A6293 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,12 +324,15 @@
 				629AEB4920A0A3E80097EA7E /* NetworkTool.swift in Sources */,
 				624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */,
 				629AEB3E20A0698E0097EA7E /* CollectionHeadView.swift in Sources */,
+				62EEF85820A3153C00DFC2AC /* RecommendCycleView.swift in Sources */,
 				62699FD0209ECE8800B20FDD /* UIColor-Extention.swift in Sources */,
 				DFBB7C3E20A18BE9008C8E33 /* AnchorModel.swift in Sources */,
 				624DDAFE209E9F2500ABA631 /* UIBarButtomItem-Extition.swift in Sources */,
 				629AEB3F20A0698E0097EA7E /* CollectionNormailCell.swift in Sources */,
 				DFBB7C3A20A17ECA008C8E33 /* NSDate-Extension.swift in Sources */,
+				62EEF85C20A32F7700DFC2AC /* CycleModel.swift in Sources */,
 				62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */,
+				62853FD520A3391A0068AB36 /* CollectionCycleCell.swift in Sources */,
 				DFBB7C3C20A18182008C8E33 /* AnchorGroup.swift in Sources */,
 				629AEB4320A069940097EA7E /* RecommendViewController.swift in Sources */,
 				DFBB7C3820A17C26008C8E33 /* RecommendViewModel.swift in Sources */,
@@ -477,8 +497,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7ZZ9S6T98H;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q4F8JTD7G;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -487,8 +507,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aim1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "552d6e23-a33e-4291-a7f4-0ca2bb79abae";
-				PROVISIONING_PROFILE_SPECIFIER = zhuo_vip;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,8 +520,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7ZZ9S6T98H;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q4F8JTD7G;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,8 +530,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aim1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "552d6e23-a33e-4291-a7f4-0ca2bb79abae";
-				PROVISIONING_PROFILE_SPECIFIER = zhuo_vip;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
