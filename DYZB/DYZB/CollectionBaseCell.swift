@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionBaseCell: UICollectionViewCell {
     
@@ -29,6 +30,9 @@ class CollectionBaseCell: UICollectionViewCell {
             }
             onLineBtn.setTitle(onLineStr, for: .normal)
             nickNameLabel.text = anchor.nickname
+//            let url = URL(string: "url_of_your_image")
+//            imageView.kf.setImage(with: url)
+            iconImageView.kf.setImage(with: URL(string: anchor.vertical_src))
         }
     }
 }
