@@ -18,4 +18,13 @@ extension UIBarButtonItem {
         btn.titleLabel?.textColor = .red
         return UIBarButtonItem(customView: btn)
     }
+    
+    class func creatItem(imageString:String ,highImageString:String,size:CGSize) -> UIBarButtonItem {
+        let btn = UIButton()
+        btn.setImage(UIImage(named: imageString), for: .normal)
+        btn.setImage(UIImage(named: highImageString), for: .highlighted)
+        btn.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+        btn.titleLabel?.textColor = .red
+        return UIBarButtonItem(customView: btn)
+    }
 }

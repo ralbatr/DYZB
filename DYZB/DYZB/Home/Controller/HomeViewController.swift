@@ -53,13 +53,15 @@ extension HomeViewController {
         let size = CGSize(width: 40, height: 40)
         
         let leftItem = UIButton()
-        leftItem.setTitle("L", for: .normal)
+        leftItem.setImage(UIImage(named: "logo"), for: .normal)
         leftItem.sizeToFit()
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftItem)
         
-        let rightItem1 = UIBarButtonItem.creatItem(titel: "R1", highTitle: "RH1", size:size)
-        let rightItem2 = UIBarButtonItem.creatItem(titel: "R2", highTitle: "RH2", size:size)
-        navigationItem.rightBarButtonItems = [rightItem1,rightItem2]
+        let rightItem1 = UIBarButtonItem.creatItem(imageString: "btn_search", highImageString: "btn_search_clicked", size: size)
+        let rightItem2 = UIBarButtonItem.creatItem(imageString: "image_my_history", highImageString: "Image_my_history_click", size:size)
+        let rightItem3 = UIBarButtonItem.creatItem(imageString: "Image_scan", highImageString: "Image_scan_click", size:size)
+        
+        navigationItem.rightBarButtonItems = [rightItem1,rightItem2,rightItem3]
     }
 }
 
