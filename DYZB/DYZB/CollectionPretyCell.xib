@@ -41,38 +41,44 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="F2P-w5-Mvp">
                         <rect key="frame" x="5" y="5" width="165" height="195"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.Radius">
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskBounce" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEP-8L-8Mz">
-                        <rect key="frame" x="109" y="0.0" width="60" height="30"/>
+                        <rect key="frame" x="110" y="5" width="60" height="30"/>
                         <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="Pq3-RU-rEJ"/>
-                            <constraint firstAttribute="width" constant="60" id="Uoe-un-Paf"/>
+                            <constraint firstAttribute="width" constant="60" id="VR1-O7-9dp"/>
+                            <constraint firstAttribute="height" constant="30" id="l1N-EX-kYg"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="6666">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Ymp-Pu-W53" secondAttribute="trailing" constant="5" id="0ZT-dc-e2A"/>
                 <constraint firstItem="Ymp-Pu-W53" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5MY-Vi-VYW"/>
-                <constraint firstItem="uEP-8L-8Mz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Ez-Qv-dzM"/>
                 <constraint firstItem="Ymp-Pu-W53" firstAttribute="top" secondItem="F2P-w5-Mvp" secondAttribute="bottom" constant="5" id="972-R9-WlU"/>
                 <constraint firstItem="F2P-w5-Mvp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Iug-ck-Fit"/>
+                <constraint firstItem="uEP-8L-8Mz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Kja-pe-Bkg"/>
+                <constraint firstAttribute="trailing" secondItem="uEP-8L-8Mz" secondAttribute="trailing" constant="5" id="URm-bL-jVL"/>
                 <constraint firstItem="bKt-Bg-G6H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="alJ-1t-8q4"/>
                 <constraint firstItem="F2P-w5-Mvp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="b9G-uV-l8T"/>
                 <constraint firstItem="bKt-Bg-G6H" firstAttribute="top" secondItem="Ymp-Pu-W53" secondAttribute="bottom" constant="5" id="evi-WX-c2d"/>
                 <constraint firstAttribute="trailing" secondItem="F2P-w5-Mvp" secondAttribute="trailing" constant="5" id="fAm-yC-KVk"/>
                 <constraint firstAttribute="bottom" secondItem="bKt-Bg-G6H" secondAttribute="bottom" constant="10" id="sYF-kz-PvR"/>
-                <constraint firstAttribute="trailing" secondItem="uEP-8L-8Mz" secondAttribute="trailing" constant="6" id="yam-D8-69A"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="175" height="250"/>
