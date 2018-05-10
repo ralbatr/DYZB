@@ -24,8 +24,14 @@ class RecommendViewController: UIViewController {
     
     private lazy var recommendCycelView:RecommendCycleView = {
        let cycelView = RecommendCycleView.recommentCycleView()
-        cycelView.frame = CGRect(x: 0, y: -kCycleViewHight, width: kScreenWidth, height: kCycleViewHight)
+        cycelView.frame = CGRect(x: 0, y: -kCycleViewHight-90, width: kScreenWidth, height: kCycleViewHight)
         return cycelView
+    }()
+    
+    private lazy var recommendGameView:RecommendGameView = {
+       let gameView = RecommendGameView.recommendGameVew()
+        gameView.frame = CGRect(x: 0, y: -90, width: kScreenWidth, height: 90)
+        return gameView;
     }()
     
     // 懒加载属性
@@ -70,9 +76,10 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
     private func setupUI() {
         view.addSubview(collectionView)
+        collectionView.addSubview(recommendGameView)
         collectionView.addSubview(recommendCycelView)
         
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewHight, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewHight+90, left: 0, bottom: 0, right: 0)
     }
 }
 

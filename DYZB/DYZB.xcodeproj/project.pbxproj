@@ -15,6 +15,8 @@
 		624DDAF1209DDC9400ABA631 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DDAEF209DDC9300ABA631 /* Live.storyboard */; };
 		624DDAFA209E980F00ABA631 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DDAF9209E980E00ABA631 /* PageTitleView.swift */; };
 		624DDAFE209E9F2500ABA631 /* UIBarButtomItem-Extition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DDAFD209E9F2500ABA631 /* UIBarButtomItem-Extition.swift */; };
+		6256262520A47CF50056492D /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256262420A47CF50056492D /* RecommendGameView.swift */; };
+		6256262720A47D030056492D /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6256262620A47D030056492D /* RecommendGameView.xib */; };
 		62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FC9209EA31600B20FDD /* HomeViewController.swift */; };
 		62699FCC209EA78300B20FDD /* commTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCB209EA78300B20FDD /* commTool.swift */; };
 		62699FCE209EAC5400B20FDD /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62699FCD209EAC5400B20FDD /* PageContentView.swift */; };
@@ -51,6 +53,8 @@
 		624DDAF0209DDC9300ABA631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		624DDAF9209E980E00ABA631 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		624DDAFD209E9F2500ABA631 /* UIBarButtomItem-Extition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtomItem-Extition.swift"; sourceTree = "<group>"; };
+		6256262420A47CF50056492D /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		6256262620A47D030056492D /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		62699FC9209EA31600B20FDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		62699FCB209EA78300B20FDD /* commTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commTool.swift; sourceTree = "<group>"; };
 		62699FCD209EAC5400B20FDD /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				62EEF85920A3154D00DFC2AC /* RecommendCycleView.xib */,
 				62853FD320A3391A0068AB36 /* CollectionCycleCell.swift */,
 				62853FD420A3391A0068AB36 /* CollectionCycleCell.xib */,
+				6256262420A47CF50056492D /* RecommendGameView.swift */,
+				6256262620A47D030056492D /* RecommendGameView.xib */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 				624DDADD209DD46300ABA631 /* Main.storyboard in Resources */,
 				62853FD620A3391A0068AB36 /* CollectionCycleCell.xib in Resources */,
 				DF1FEFDA20A2D5B0000A6293 /* Home.storyboard in Resources */,
+				6256262720A47D030056492D /* RecommendGameView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +337,7 @@
 				624DDAFE209E9F2500ABA631 /* UIBarButtomItem-Extition.swift in Sources */,
 				629AEB3F20A0698E0097EA7E /* CollectionNormailCell.swift in Sources */,
 				DFBB7C3A20A17ECA008C8E33 /* NSDate-Extension.swift in Sources */,
+				6256262520A47CF50056492D /* RecommendGameView.swift in Sources */,
 				62EEF85C20A32F7700DFC2AC /* CycleModel.swift in Sources */,
 				62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */,
 				62853FD520A3391A0068AB36 /* CollectionCycleCell.swift in Sources */,
