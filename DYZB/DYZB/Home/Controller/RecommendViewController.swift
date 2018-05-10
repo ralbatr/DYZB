@@ -24,7 +24,7 @@ class RecommendViewController: UIViewController {
     
     private lazy var recommendCycelView:RecommendCycleView = {
        let cycelView = RecommendCycleView.recommentCycleView()
-        cycelView.frame = CGRect(x: 0, y: -kScreenWidth, width: kScreenWidth, height: kScreenWidth)
+        cycelView.frame = CGRect(x: 0, y: -kCycleViewHight, width: kScreenWidth, height: kCycleViewHight)
         return cycelView
     }()
     

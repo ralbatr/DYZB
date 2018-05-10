@@ -11,21 +11,7 @@ import UIKit
 let kCycleCellId = "kCycleCellId"
 
 class RecommendCycleView: UIView {
-    
-//    @objc var room:[String:NSObject]? {
-//        didSet {
-//            guard let room = room else {return}
-//
-//            anchor = AnchorModel(dict: room)
-//        }
-//    }
-    
-    var room:[String :NSObject]?{
-        didSet {
-            
-        }
-    }
-    
+
     var cycelModels:[CycleModel]?{
         didSet {
             collectionView.reloadData()
@@ -48,7 +34,7 @@ class RecommendCycleView: UIView {
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
 //        layout.minimumLineSpacing = 0
 //        layout.minimumInteritemSpacing = 0
-        layout.itemSize = collectionView.bounds.size
+        layout.itemSize = self.bounds.size
 //        layout.scrollDirection = .horizontal
 //        collectionView.isPagingEnabled = true
     }
