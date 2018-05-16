@@ -68,6 +68,7 @@ class RecommendViewController: UIViewController {
         
         recommendVM.requestCycleData {
             self.recommendCycelView.cycelModels = self.recommendVM.cycleModels
+            self.recommendGameView.groups = self.recommendVM.anchorGroups
         }
     }
 }

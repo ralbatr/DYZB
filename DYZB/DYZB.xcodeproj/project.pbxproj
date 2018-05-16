@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21524E35EA2B63AC2E80C529 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F4964FA1B41A860D38E979 /* Pods_DYZB.framework */; };
+		621B75E320A5B4770003E1DC /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B75E120A5B4770003E1DC /* CollectionGameCell.swift */; };
+		621B75E420A5B4770003E1DC /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621B75E220A5B4770003E1DC /* CollectionGameCell.xib */; };
 		624DDAD8209DD46200ABA631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DDAD7209DD46200ABA631 /* AppDelegate.swift */; };
 		624DDADD209DD46300ABA631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DDADB209DD46300ABA631 /* Main.storyboard */; };
 		624DDADF209DD46E00ABA631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DDADE209DD46E00ABA631 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		58417B09B9B13F399550F5CA /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
+		621B75E120A5B4770003E1DC /* CollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
+		621B75E220A5B4770003E1DC /* CollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
 		624DDAD4209DD46200ABA631 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624DDAD7209DD46200ABA631 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624DDADC209DD46300ABA631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				62853FD420A3391A0068AB36 /* CollectionCycleCell.xib */,
 				6256262420A47CF50056492D /* RecommendGameView.swift */,
 				6256262620A47D030056492D /* RecommendGameView.xib */,
+				621B75E120A5B4770003E1DC /* CollectionGameCell.swift */,
+				621B75E220A5B4770003E1DC /* CollectionGameCell.xib */,
 			);
 			path = DYZB;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				62EEF85A20A3154D00DFC2AC /* RecommendCycleView.xib in Resources */,
 				624DDAE2209DD46E00ABA631 /* LaunchScreen.storyboard in Resources */,
 				624DDADF209DD46E00ABA631 /* Assets.xcassets in Resources */,
+				621B75E420A5B4770003E1DC /* CollectionGameCell.xib in Resources */,
 				624DDAF1209DDC9400ABA631 /* Live.storyboard in Resources */,
 				629AEB4120A0698E0097EA7E /* CollectionHeadView.xib in Resources */,
 				624DDADD209DD46300ABA631 /* Main.storyboard in Resources */,
@@ -338,6 +345,7 @@
 				629AEB3F20A0698E0097EA7E /* CollectionNormailCell.swift in Sources */,
 				DFBB7C3A20A17ECA008C8E33 /* NSDate-Extension.swift in Sources */,
 				6256262520A47CF50056492D /* RecommendGameView.swift in Sources */,
+				621B75E320A5B4770003E1DC /* CollectionGameCell.swift in Sources */,
 				62EEF85C20A32F7700DFC2AC /* CycleModel.swift in Sources */,
 				62699FCA209EA31600B20FDD /* HomeViewController.swift in Sources */,
 				62853FD520A3391A0068AB36 /* CollectionCycleCell.swift in Sources */,

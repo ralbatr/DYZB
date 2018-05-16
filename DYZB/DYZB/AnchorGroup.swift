@@ -20,7 +20,7 @@ class AnchorGroup: NSObject {
     }
     @objc var tag_name:String = ""
     @objc var icon_name:String = "btn_column_selected"
-    
+    @objc var icon_url: String = ""
     lazy var anchors:[AnchorModel] = [AnchorModel]()
     
     init(dict : [String:NSObject]) {
